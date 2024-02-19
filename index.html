@@ -13,7 +13,7 @@
     <title>Make bus ticket prices</title>
   </head>
   <body class="p-[5%]">
-    <section>
+    <section class="">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -69,8 +69,10 @@
         </div>
       </div>
       <br /><br /><br /><br /><br /><br />
+      <!-- 2nd part -->
       <h1 class="text-6xl justify-center text-center">Best offers for you</h1>
       <br /><br /><br />
+      <!-- 2nd item -->
       <div class="flex justify-between">
         <div class="card flex bg-[#FFBF0F] text-[#030712] w-96 shadow-xl">
           <div class="card-body">
@@ -95,57 +97,60 @@
           </div>
         </div>
       </div>
+
+      <!--  -->
+      <!--  -->
       <div class="text-center">
         <button class="btn bg-white border-[#1DD100] text-[#1DD100]">
           See All Offers
         </button>
       </div>
       <br /><br /><br />
-      <div>
-        <div class="text-center">
-          <h1 class="text-8xl">P Paribahan</h1>
-          <p class="text-xl">
-            Yes, you can run unit tests and view the results directly within the
-            app. The integrated <br />
-            testing features allow for a streamlined .
-          </p>
-        </div>
-        <br /><br /><br />
-        <div class="flex bg-white p-8 shadow-lg">
-          <div>
-            <div class="flex">
-              <img src="./images/bus-logo.png" alt="" />
-              <h1>
-                Greenline Paribahan <br />
-                Coach-009-WEB ! AC_Business
-              </h1>
-              <br />
-              <div class="pl-[400px]">
-                <button class="btn text-[#1DD100] bg-[#1DD10015]">
-                  <img src="./images/seat-green.png" /> 8 Seats left
-                </button>
-              </div>
-            </div>
-            <br /><br />
-            <div>
-              <div class="flex gap-[600px] border-b-3">
-                <h3 class="text-[#03071260] text-xl">Route</h3>
-                <h3>Dhaka - Sylhet</h3>
-              </div>
-              <br />
-              <div class="flex gap-[550px] border-b-3">
-                <h3 class="text-[#03071260] text-xl">Departure Time</h3>
-                <h3>9:00 PM</h3>
-              </div>
-              <!-- <hr style="margin: auto; width: 40%" /> -->
-              <br /><br />
-              <div class="pl-5">
-                <button class="btn">Boarding Point - Laxmipur</button>
-                <button class="btn pl-6">Dropping Point - Bogura</button>
-                <button class="btn pl-7">Est. Time - 11 Hour</button>
-              </div>
-            </div>
+
+      <div class="text-center">
+        <h1 class="text-8xl">P Paribahan</h1>
+        <p class="text-xl">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated <br />
+          testing features allow for a streamlined .
+        </p>
+      </div>
+      <br /><br /><br />
+
+      <div class="bg-white p-8 shadow-lg">
+        <div class="flex">
+          <img src="./images/bus-logo.png" alt="" />
+          <h1>
+            Greenline Paribahan <br />
+            Coach-009-WEB ! AC_Business
+          </h1>
+          <br />
+          <div class="pl-[400px]">
+            <button class="btn text-[#1DD100] bg-[#1DD10015]">
+              <img src="./images/seat-green.png" />
+              <span id="seatsRemaining">8</span>Seats left
+            </button>
           </div>
+        </div>
+        <br /><br />
+        <div>
+          <div class="flex gap-[600px] border-b-3">
+            <h3 class="text-[#03071260] text-xl">Route</h3>
+            <h3>Dhaka - Sylhet</h3>
+          </div>
+          <br />
+          <div class="flex gap-[550px] border-b-3">
+            <h3 class="text-[#03071260] text-xl">Departure Time</h3>
+            <h3>9:00 PM</h3>
+          </div>
+          <!-- <hr style="margin: auto; width: 40%" /> -->
+          <br /><br />
+          <div class="pl-5">
+            <button class="btn">Boarding Point - Laxmipur</button>
+            <button class="btn pl-6">Dropping Point - Bogura</button>
+            <button class="btn pl-7">Est. Time - 11 Hour</button>
+          </div>
+
           <!--  -->
           <div class="justify-center items-center pl-[330px] pb-10">
             <img src="./images/fare.png" alt="" />
@@ -154,6 +159,150 @@
           </div>
         </div>
       </div>
+
+      <br /><br />
+      <!--  -->
+      <!--  -->
+      <div class="flex gap-28">
+        <div class="bg-white p-8 rounded-lg">
+          <h2 class="text-2xl font-bold mb-4">Select Your Seat</h2>
+          <br />
+          <div class="flex">
+            <p class="flex"><img src="./images/seat-gray.png" /> Available</p>
+            <p class="flex pl-96">
+              <img src="./images/seat-green.png" alt="" />Selected
+            </p>
+          </div>
+          <br /><br />
+          <div class="grid grid-cols-4 gap-9">
+            <!-- Row 1 -->
+            <div class="col-span-4 flex gap-9">
+              <div
+                class="seat pt-[15px] pb-[15px] pr-[45px] pl-[45px] bg-[#03071250] rounded cursor-pointer col-1"
+                onclick="selectSeat(1)"
+              >
+                A1
+              </div>
+              <div
+                class="seat pt-[15px] pb-[15px] pr-[45px] pl-[45px] bg-[#03071250] rounded cursor-pointer col-2"
+                onclick="selectSeat(2)"
+              >
+                A2
+              </div>
+              <div
+                class="seat pt-[15px] pb-[15px] pr-[45px] pl-[45px] bg-[#03071250] rounded cursor-pointer col-3"
+                onclick="selectSeat(3)"
+              >
+                A3
+              </div>
+              <div
+                class="seat pt-[15px] pb-[15px] pr-[45px] pl-[45px] bg-[#03071250] rounded cursor-pointer col-4"
+                onclick="selectSeat(4)"
+              >
+                A4
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="col-span-4 flex gap-9">
+              <div
+                class="seat pt-[15px] pb-[15px] pr-[45px] pl-[45px] bg-[#03071250] rounded cursor-pointer col-5"
+                onclick="selectSeat(5)"
+              >
+                B1
+              </div>
+              <div
+                class="seat pt-[15px] pb-[15px] pr-[45px] pl-[45px] bg-[#03071250] rounded cursor-pointer col-6"
+                onclick="selectSeat(6)"
+              >
+                B2
+              </div>
+              <div
+                class="seat pt-[15px] pb-[15px] pr-[45px] pl-[45px] bg-[#03071250] rounded cursor-pointer col-7"
+                onclick="selectSeat(7)"
+              >
+                B3
+              </div>
+              <div
+                class="seat pt-[15px] pb-[15px] pr-[45px] pl-[45px] bg-[#03071250] rounded cursor-pointer col-8"
+                onclick="selectSeat(8)"
+              >
+                B4
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1>Select Your Seat</h1>
+          </div>
+          <br />
+          <div class="flex gap-28">
+            <p class="text-xl">
+              Seat
+              <span class="bg-[#1DD100] rounded text-xl" id="selectedSeats"
+                >0</span
+              >
+            </p>
+            <p class="text-xl">Class</p>
+            <p class="text-xl">Price</p>
+          </div>
+          <br /><br />
+          <div class="flex gap-28">
+            <p class="text-xl">A<span>1</span></p>
+            <p class="text-xl text-[#03071260]">Economoy</p>
+            <p class="text-xl" id="price">00</p>
+          </div>
+          <br />
+          <div class="flex justify-between">
+            <p class="text-xl">Total Price</p>
+            <p class="text-xl" id="totalPrice">00</p>
+          </div>
+          <br />
+          <div class="flex justify-between">
+            <p class="text-xl">Grand Total</p>
+            <p class="text-xl">00</p>
+          </div>
+          <button id="continueBtn" class="btn btn-wide">Next</button>
+        </div>
+      </div>
     </section>
+    <script>
+      // Handle button click event
+      document
+        .getElementById("continueBtn")
+        .addEventListener("click", function () {
+          // Change 'path/to/another/file.html' to the actual file or URL you want to navigate to
+          window.location.href = "last.html";
+        });
+    </script>
+    <script>
+      let remainingSeats = 8;
+      let selectedSeats = 0;
+      let singlePrice = 550;
+      let totalPrice = 0;
+
+      function selectSeat(seatNumber) {
+        const seat = document.querySelector(`.col-${seatNumber}`);
+
+        if (seat.classList.contains("selected")) {
+          seat.classList.remove("bg-green-500", "selected");
+          remainingSeats++;
+          selectedSeats++;
+        } else if (remainingSeats > 4) {
+          seat.classList.add("bg-green-500", "selected");
+          remainingSeats--;
+          selectedSeats--;
+        }
+
+        document.getElementById("seatsRemaining").innerText = remainingSeats;
+        document.getElementById("price").innerText = singlePrice;
+        document.getElementById("totalPrice").innerText = Math.abs(
+          singlePrice * selectedSeats
+        );
+        document.getElementById("selectedSeats").innerText =
+          Math.abs(selectedSeats);
+      }
+    </script>
   </body>
 </html>
